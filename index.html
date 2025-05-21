@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile - Follow Me</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="profile">
+    <img src="https://i.imgur.com/placeholder.png" alt="Profile Picture" class="profile-pic" />
+    <h1>Mtàlîbàñ</h1>
+    <p>Welcome to my personal site. Follow me and stay updated!</p>
+    <button onclick="followMe()">Follow</button>
+    <span id="follower-count">Followers: 0</span>
+  </div>
+
+  <div class="feed">
+    <h2>Latest Updates</h2>
+    <div class="post">
+      <h3>First Post</h3>
+      <p>This is my first update!</p>
+      <button onclick="likePost(0)">Like</button>
+      <span id="likes-0">0 Likes</span>
+      <div class="comments">
+        <input type="text" id="comment-input-0" placeholder="Write a comment...">
+        <button onclick="addComment(0)">Comment</button>
+        <div id="comments-0"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
